@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>PhamCaoBang - Lab1</title>
+    <link rel="stylesheet" href="./cssLab1/style.css">
+    <link rel="stylesheet" href="./cssLab1/general.css">
+    <link rel="stylesheet" href="./cssLab1/item.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/queries.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#">
+            <img class="logo" alt="Omnifood logo" src="../img/omnifood-logo.png" />
+        </a>
+
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="../index.html">Home</a></li>
+                <li><a class="main-nav-link" href="../About/about.html">About</a></li>
+                <li><a class="main-nav-link"
+                        href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/Untitled?node-id=0%3A1"
+                        target="_blank">Figma</a></li>
+                <!-- <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li> -->
+            </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </header>
+    <h1 class="heading-primary">Lab 1</h1>
+    <section class="section-labs">
+        <div class="container labs1">
+            <div class="tabs labs-items">
+                <div class="tab">
+                    <a class="active-a" href="#">Lab1</a>
+                </div>
+                <div class="tab">
+                    <a href="../Lab2/lab2.html">Lab2</a>
+                </div>
+                <div class="tab">
+                    <a href="../Lab3/lab3.html">Lab3</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-labs">
+        <div class="container labs">
+            <div class="tabs labs-items">
+                <div class="tab-item active">
+                    <button class="bang-nav-link">
+                        Implement
+                    </button>
+                </div>
+                <div class="tab-item">
+                    <button class="bang-nav-link">
+                        Design
+                    </button>
+                </div>
+                <div class="tab-item">
+                    <button class="bang-nav-link">
+                        Requirement
+                    </button>
+                </div>
+                <div class="figma">
+                    <a href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=137%3A3"
+                        target="_blank">Figma Lab1</a>
+                </div>
+            </div>
+
+            <!-- Tab content -->
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <section class="section section-list hidden" id="section--2">
+                        <div class="list-items">
+                            <div class="list-store">
+                                <h3>List Food 🍕🍤🍖</h3>
+                                <input type="search" id="gsearch" name="gsearch" placeholder="Search">
+                            </div>
+                            <div class="movements">
+                                <div class="movements-row">
+                                    <div class="movement-name">Masala Dosa</div>
+                                    <div class="amount-buyer">India</div>
+                                    <div class="movement-price">$1,179</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Spring rolls</div>
+                                    <div class="amount-buyer">Vietnam</div>
+                                    <div class="movement-price">$1,000</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Paella</div>
+                                    <div class="amount-buyer">Spain</div>
+                                    <div class="movement-price">$2,149</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Papaya salad</div>
+                                    <div class="amount-buyer">Thailand</div>
+                                    <div class="movement-price">$1,249</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Chicken rice</div>
+                                    <div class="amount-buyer">Singapore</div>
+                                    <div class="movement-price">$2,000</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Poutine</div>
+                                    <div class="amount-buyer">Canada</div>
+                                    <div class="movement-price">$4,449</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Taco</div>
+                                    <div class="amount-buyer">Mexico</div>
+                                    <div class="movement-price">$10,999</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name"> Chilli Crab</div>
+                                    <div class="amount-buyer">Singapore</div>
+                                    <div class="movement-price">$8,599</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Ankimo</div>
+                                    <div class="amount-buyer">Japan</div>
+                                    <div class="movement-price">$3,000</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Pho</div>
+                                    <div class="amount-buyer">VietNam</div>
+                                    <div class="movement-price">$2,149</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Montreal Bacon</div>
+                                    <div class="amount-buyer">Canada</div>
+                                    <div class="movement-price">$1,249</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Fajitas
+                                    </div>
+                                    <div class="amount-buyer">Mexico</div>
+                                    <div class="movement-price">$3,000</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Nam Tok Moo</div>
+                                    <div class="amount-buyer">Thailand</div>
+                                    <div class="movement-price">$5,139</div>
+                                </div>
+                                <div class="movements-row">
+                                    <div class="movement-name">Kebab</div>
+                                    <div class="amount-buyer">Iran</div>
+                                    <div class="movement-price">$2,541</div>
+                                </div>
+
+                            </div>
+
+                            <div class="movement-box add-movements">
+                                <h3>Add Food</h3>
+                                <form class="form">
+                                    <input type="text" class="form-input">
+                                    <input type="text" class="form-input">
+                                    <button class="form-btn">→</button>
+                                    <label class="form-label">Name Food</label>
+                                    <label class="form-label">Price</label>
+                                </form>
+                            </div>
+                            <div class="movement-box fix-movements">
+                                <h3>Edit Food List</h3>
+                                <form class="form">
+                                    <input type="text" class="form-input form-name">
+                                    <input type="text" class="form-input form-price">
+                                    <button class="form-btn">→</button>
+                                    <label class="form-label">Name</label>
+                                    <label class="form-label">New Price</label>
+                                </form>
+                            </div>
+                            <div class="movement-box remove-movements">
+                                <h3>Remove Food</h3>
+                                <form class="form form-remove">
+                                    <input type="text" class="form-input form-name">
+                                    <button class="form-btn">→</button>
+                                    <label class="form-label form-label-remove">Name to remove</label>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane">
+                    <section class=" section-design">
+                        <div class="requirement container">
+                            <h2 class="heading-secondary">
+                                I. Design on paper
+                            </h2>
+                            <div class="scroll">
+                                <img src="./Design/design2.jpg" alt="">
+                            </div>
+                            <h2 class="heading-secondary">
+                                II. Design on HTML
+                            </h2>
+                            <div class="scroll">
+                                <h3 class="heading-high">1. Lab1</h3>
+                                <img src="./Design/1.png" alt="">
+                                <h3 class="heading-high">2. Design</h3>
+                                <img src="./Design/2.png" alt="">
+                                <h3 class="heading-high">3. Requirement</h3>
+                                <img src="./Design/3.png" alt="">
+                                <h3 class="heading-high">4. Implement</h3>
+                                <img src="./Design/4.png" alt="">
+                                <img src="./Design/fullpage.png" alt="">
+                            </div>
+                            <h2 class="heading-secondary">
+                                III. Design on Website
+                            </h2>
+                            <div class="scroll">
+                                <h3 class="heading-high">1. Lab1</h3>
+                                <img src="./Design/a.png" alt="">
+                                <h3 class="heading-high">2. Design</h3>
+                                <img src="./Design/b.png" alt="">
+                                <h3 class="heading-high">3. Requirement</h3>
+                                <img src="./Design/c.png" alt="">
+
+                            </div>
+                            <h2 class="heading-secondary">
+                                IV. Design on Figma - <a
+                                    href="https://www.figma.com/file/nSu0okEDoBOExF822GAgeU/Untitled?node-id=0%3A1"
+                                    target="_blank">Click Here</a>
+                            </h2>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-pane">
+                    <section class="section-requirement">
+                        <div class="requirement container">
+
+                            <h3 class="heading-high">
+                                1. Choose any object in the real world
+                            </h3>
+                            <p>For example, subject class, lecturer, etc. </p>
+
+                            <h3 class="heading-high">2. Then design the function of managing that object on HTML</h3>
+                            <p>Including adding, editing, deleting, and searching for that object.</p>
+                            <p>For example, a Student Management function includes add, edit, delete, and search
+                                features.</p>
+                            <p class="note">Note: Team members cannot select the same objects.</p>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container grid grid--footer">
+            <div class="logo-col">
+                <p class="copyright">
+                    Copyright &copy; 2022 by PhamCaoBang, Inc. All rights reserved.
+                </p>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Contact me</p>
+                <address class="contacts">
+                    <p class="address">
+                        Quang Phu, Quang Dien, Thua Thien Hue Province, Viet Nam
+                    </p>
+                    <p>
+                        <a class="footer-link" href="tel:0101010101">+840101010101</a><br />
+                        <a class="footer-link" href="mailto:imcaobang0612@gmail.com">imcaobang0612@gmail.com</a>
+                    </p>
+                </address>
+            </div>
+            <nav class="nav-col">
+                <p class="footer-heading">Labs</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="../Lab1/lab1.html">Lab1</a></li>
+                    <li><a class="footer-link" href="../Lab2/lab2.html">Lab2</a></li>
+                    <li><a class="footer-link" href="../Lab2/lab2.html">Lab3</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Figmas</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link"
+                            href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=0%3A1"
+                            target="_blank">Figma All
+                            Website</a></li>
+                    <li><a class="footer-link"
+                            href="https://www.figma.com/file/nSu0okEDoBOExF822GAgeU/Lab1?node-id=15%3A2"
+                            target="_blank">Figma
+                            Lab1</a></li>
+                    <li><a class="footer-link"
+                            href="https://www.figma.com/file/Fu9TyzWSxgKc8S9PzuuoRs/Lab2?node-id=0%3A1"
+                            target="_blank">Figma
+                            Lab2</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Socials</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="https://www.facebook.com/whoimme/" target="_blank">Facebook</a>
+                    </li>
+                    <li><a class="footer-link" href="https://www.instagram.com/pcbangg/" target="_blank">Instagram</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
