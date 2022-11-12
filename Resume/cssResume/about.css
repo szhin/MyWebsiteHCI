@@ -1,0 +1,26 @@
+.img-about {
+  height: 20rem;
+  width: 20rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.about {
+  padding: 8rem 12rem;
+  display: flex;
+}
+
+.about2-left {
+  padding: 0 6rem;
+}
+.about2-right {
+  padding: 0 6rem;
+  border-left: 1px solid #ddd;
+}
+
+.about2-left .name {
+  font-size: 2.4rem;
+  text-align: center;
+}

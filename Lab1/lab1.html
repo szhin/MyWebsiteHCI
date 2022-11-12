@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logoShin1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="../img/favicon.png" />
-    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
         rel="stylesheet">
 
     <title>PhamCaoBang - Lab1</title>
@@ -20,32 +18,51 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/queries.css">
+    <link rel="stylesheet" href="../logo.css">
+    <link rel="stylesheet" href="../Resume/cssResume/style.css">
+    <link rel="stylesheet" href="../Resume/cssResume/general.css">
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 3rem;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #1098ad;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 100px;
+            transition: all 0.3s;
+        }
 
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+            height="18" fill="currentColor" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z" />
+        </svg></button>
     <header class="header">
-        <a href="../index.html">
-            <img class="logo" alt="Omnifood logo" src="../img/omnifood-logo.png" />
-        </a>
-
-        <nav class="main-nav">
-            <ul class="main-nav-list" style="padding-left: 20px;">
-                <li><a class="main-nav-link" href="../Lab1/lab1.html" style="font-weight: 600;">Labs</a></li>
-
-                <li><a class="main-nav-link" href="../index.html" style="font-weight: 600;">Home</a></li>
-                <li><a class="main-nav-link" href="../About/about.html" style="font-weight: 600;">About</a></li>
-                <li><a class="main-nav-link"
-                        href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/Untitled?node-id=0%3A1" target="_blank"
-                        style="font-weight: 600;">Figma</a></li>
-                <!-- <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li> -->
+        <h3 class="name" style="color: #182153;">Pham Cao Bang</h3>
+        <nav class="navbar">
+            <ul class="navbar-items">
+                <li><a href="../index.html" class="main-nav-link">Home</a></li>
+                <li><a href="#" class="main-nav-link" style="color: #AEB4D4;">Labs</a></li>
+                <li><a href="../Resume/resume.html" class="main-nav-link">Resume</a></li>
+                <li><a href="../Resume/about.html" class="main-nav-link">About</a></li>
+                <li><a href="../Resume/result.html" class="main-nav-link">Result</a></li>
+                <li><a href="../Project/project.html" class="main-nav-link" target="_blank">Project</a></li>
             </ul>
         </nav>
-
-        <button class="btn-mobile-nav">
-            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-        </button>
     </header>
     <h1 class="heading-primary">Lab 1</h1>
     <section class="section-labs">
@@ -59,6 +76,12 @@
                 </div>
                 <div class="tab">
                     <a href="../Lab3/lab3.html">Lab3</a>
+                </div>
+                <div class="tab">
+                    <a href="../Lab4/lab4.html">Lab4</a>
+                </div>
+                <div class="tab">
+                    <a href="../Lab5/lab5.html">Lab5</a>
                 </div>
             </div>
         </div>
@@ -81,11 +104,11 @@
                         Requirement
                     </button>
                 </div>
-                <div class="figma">
-                    <a href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=137%3A3"
+                <div class="figma1">
+                    <a href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=217%3A1032"
                         target="_blank">Figma Lab1</a>
                 </div>
-                <button class="bang-nav-link" style="width: 100%;">
+                <button class=" bang-nav-link" style="width: 100%;">
                 </button>
             </div>
 
@@ -206,57 +229,59 @@
                 </div>
                 <div class="tab-pane">
                     <section class=" section-design">
-                        <div class="requirement container">
-                            <h2 class="heading-secondary">
-                                I. Design on paper
-                            </h2>
-                            <div class="scroll">
-                                <img src="./Design/design2.jpg" alt="">
+                        <div class="requirement">
+                            <div class="requirement-paper">
+                                <h2 class="heading-secondary">
+                                    I. Lab1 on paper
+                                </h2>
+                                <a href="./img/design2.jpg" download="lab1">💻 Download</a>
+                                <div class="scroll">
+                                    <img src="./img/design2.jpg" alt="">
+                                </div>
                             </div>
-                            <h2 class="heading-secondary">
-                                II. Design on HTML
-                            </h2>
-                            <div class="scroll">
-                                <h3 class="heading-high">1. Lab1</h3>
-                                <img src="./Design/1.png" alt="">
-                                <h3 class="heading-high">2. Design</h3>
-                                <img src="./Design/2.png" alt="">
-                                <h3 class="heading-high">3. Requirement</h3>
-                                <img src="./Design/3.png" alt="">
-                                <h3 class="heading-high">4. Implement</h3>
-                                <img src="./Design/4.png" alt="">
-                                <img src="./Design/fullpage.png" alt="">
-                            </div>
-                            <h2 class="heading-secondary">
-                                III. Design on Website
-                            </h2>
-                            <div class="scroll">
-                                <h3 class="heading-high">1. Lab1</h3>
-                                <img src="./Design/a.png" alt="">
-                                <h3 class="heading-high">2. Design</h3>
-                                <img src="./Design/b.png" alt="">
-                                <h3 class="heading-high">3. Requirement</h3>
-                                <img src="./Design/c.png" alt="">
 
+                            <div class="requirement-figma">
+                                <h2 class="heading-secondary">
+                                    II. Lab1 on Figma
+                                </h2>
+                                <a class="figma" href="./img/figma2.png" download="lab1_fig">💻 Download</a>
+
+                                <div class="scroll">
+                                    <img src="./img/figma1.png" alt="">
+                                    <img src="./img/figma2.png" alt="">
+                                    <img src="./img/figma3.png" alt="">
+                                </div>
                             </div>
-                            <h2 class="heading-secondary">
-                                IV. Design on Figma - <a
-                                    href="https://www.figma.com/file/nSu0okEDoBOExF822GAgeU/Untitled?node-id=0%3A1"
-                                    target="_blank">Click Here</a>
-                            </h2>
+                        </div>
+                        <div>
+                            <div class="requirement-figma">
+                                <h2 class="heading-secondary">
+                                    III. Lab1 in code
+                                </h2>
+
+
+                                <div class="scroll">
+                                    <img src="./img/1.png" alt="">
+                                    <img src="./img/2.png" alt="">
+                                    <img src="./img/3.png" alt="">
+                                    <img src="./img/4.png" alt="">
+
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
                 <div class="tab-pane">
                     <section class="section-requirement">
-                        <div class="requirement container">
+                        <div>
 
                             <h3 class="heading-high">
                                 1. Choose any object in the real world
                             </h3>
                             <p>For example, subject class, lecturer, etc. </p>
 
-                            <h3 class="heading-high">2. Then design the function of managing that object on HTML</h3>
+                            <h3 class="heading-high">2. Then design the function of managing that object on HTML
+                            </h3>
                             <p>Including adding, editing, deleting, and searching for that object.</p>
                             <p>For example, a Student Management function includes add, edit, delete, and search
                                 features.</p>
@@ -272,7 +297,7 @@
     <footer class="footer">
         <div class="container grid grid--footer">
             <div class="logo-col">
-
+                <h3 class="name">Pham Cao Bang</h3>
                 <p class="copyright">
                     Copyright &copy; 2022 by PhamCaoBang, Inc. All rights reserved.
                 </p>
@@ -292,9 +317,11 @@
             <nav class="nav-col">
                 <p class="footer-heading">Labs</p>
                 <ul class="footer-nav">
-                    <li><a class="footer-link" href="../Lab1/lab1.html">Lab1</a></li>
+                    <li><a class="footer-link" href="#">Lab1</a></li>
                     <li><a class="footer-link" href="../Lab2/lab2.html">Lab2</a></li>
                     <li><a class="footer-link" href="../Lab2/lab2.html">Lab3</a></li>
+                    <li><a class="footer-link" href="../Lab4/lab4.html">Lab4</a></li>
+                    <li><a class="footer-link" href="../Lab5/lab5.html">Lab5</a></li>
                 </ul>
             </nav>
 
@@ -302,17 +329,25 @@
                 <p class="footer-heading">Figmas</p>
                 <ul class="footer-nav">
                     <li><a class="footer-link"
-                            href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=0%3A1"
-                            target="_blank">Figma All
-                            Website</a></li>
-                    <li><a class="footer-link"
-                            href="https://www.figma.com/file/nSu0okEDoBOExF822GAgeU/Lab1?node-id=15%3A2"
+                            href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=217%3A1032"
                             target="_blank">Figma
                             Lab1</a></li>
                     <li><a class="footer-link"
-                            href="https://www.figma.com/file/Fu9TyzWSxgKc8S9PzuuoRs/Lab2?node-id=0%3A1"
+                            href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=217%3A1033"
                             target="_blank">Figma
                             Lab2</a></li>
+                    <li><a class="footer-link"
+                            href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=217%3A1034"
+                            target="_blank">Figma
+                            Lab3</a></li>
+                    <li><a class="footer-link"
+                            href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=217%3A1035"
+                            target="_blank">Figma
+                            Lab4</a></li>
+                    <li><a class="footer-link"
+                            href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/AllWebsite?node-id=239%3A2"
+                            target="_blank">Figma
+                            Lab5</a></li>
                 </ul>
             </nav>
 
@@ -328,6 +363,27 @@
             </nav>
         </div>
     </footer>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 

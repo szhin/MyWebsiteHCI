@@ -1,0 +1,353 @@
+/* ///////////////////////////////////////////////// */
+/* ////////////////////HEADER//////////////////// */
+/* ///////////////////////////////////////////////// */
+
+.header {
+  padding: 2rem 3rem;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  /* height: 5rem; */
+}
+
+.navbar-items {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.navbar-items li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-items li:hover a {
+  color: #aeb4d4;
+}
+
+.main-nav-link {
+  text-transform: uppercase;
+  padding: 0 2rem;
+  transition: all 0.3s;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ///////////////////SECTION-HERO////////////////// */
+/* ///////////////////////////////////////////////// */
+
+.section-hero {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 9.6rem 0;
+  z-index: 0;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #182153;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.hero {
+  position: relative;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+}
+/* ------------------------------------------------ */
+
+.about-me {
+  background-color: #fff;
+  /* border-top-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem; */
+}
+
+.about-left {
+  position: relative;
+  border-top-left-radius: 1rem;
+  width: 47rem;
+  height: 50rem;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+
+  /* justify-self: end; */
+}
+
+.about-right {
+  padding: 7rem;
+  width: 47rem;
+  height: 50rem;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-self: start; */
+}
+
+.subheading {
+  font-weight: 600;
+  margin-top: 0.7rem;
+  letter-spacing: 0.8px;
+}
+
+.subheading-child {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////////SECTION-1//////////////////// */
+/* ///////////////////////////////////////////////// */
+
+.icon-social {
+  height: 7.5rem;
+  width: 94rem;
+  background-color: #182153;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon-item {
+  color: #fff;
+}
+
+.bi {
+  display: flex;
+  align-items: center;
+}
+
+.list-icons ul {
+  width: 16.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.description-myself {
+  text-align: center;
+  padding: 10rem 19rem;
+  line-height: 1.5;
+}
+
+.helo {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.description-myself p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////////SECTION-2,3//////////////////// */
+/* ///////////////////////////////////////////////// */
+
+.section-2,
+.section-3 {
+  background-color: #fff;
+}
+
+.event-item {
+  padding: 5rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  letter-spacing: 2px;
+}
+.events:last-child {
+  padding-bottom: 5rem;
+}
+
+.event-left {
+  justify-self: end;
+  display: flex;
+  border-right: 0.1px solid #f1f1f1;
+  padding-right: 5rem;
+}
+
+.event-right {
+  border-left: 0.1px solid #f1f1f1;
+  padding-left: 5rem;
+}
+
+.event-left,
+.event-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+.time,
+.status {
+  text-align: end;
+}
+
+.level {
+  font-size: 1.8rem;
+  margin-bottom: 1.3rem;
+  text-transform: uppercase;
+}
+
+.description {
+  line-height: 1.8em;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.description a {
+  color: #182153;
+  font-weight: 600;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////////SECTION-4//////////////////// */
+/* ///////////////////////////////////////////////// */
+
+.section-4 .section-skill {
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 4rem 0 0 0;
+  z-index: 0;
+  height: 38rem;
+  display: flex;
+  justify-content: center;
+}
+.section-4 .overlay {
+  opacity: 0.9;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
+}
+
+.form-skill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #aeb4d4; */
+  margin-bottom: 4rem;
+}
+
+.overlay-skill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(171, 175, 207);
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.skill {
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 1.8px;
+  font-weight: 600;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////////SECTION-5//////////////////// */
+/* ///////////////////////////////////////////////// */
+
+.contact {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.input-line1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.line1-left,
+.line1-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-left input {
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.contact-right {
+  padding-left: 3.8rem;
+  border-left: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  width: 30.4rem;
+}
+
+.contact-left {
+  padding-right: 3.8rem;
+}
+
+.contact-left p {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.input-line1 span {
+  font-size: 14px;
+}
+
+.section-5 .contact-right .list-icons .link-icon-item {
+  color: #000;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////////SECTION-LAST//////////////////// */
+/* ///////////////////////////////////////////////// */
+
+.section-last {
+  background-color: #fff;
+}
+
+.section-last .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

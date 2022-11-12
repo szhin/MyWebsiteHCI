@@ -1,0 +1,31 @@
+.brand {
+  color: #000;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-weight: 600;
+  font-size: 2rem;
+  position: relative;
+  line-height: 1.1;
+  text-transform: uppercase;
+  align-items: center;
+  z-index: 3;
+}
+
+.brand small {
+  font-size: 2rem;
+  /* color: rgb(222, 221, 168); */
+  color: #1098ad;
+  margin-left: -0.8rem;
+}
+
+.brand span {
+  color: #000;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  display: block;
+  /* block để nó ko còn nằm trên 1 hàng */
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  font-family: "Poppins", Arial, sans-serif;
+}

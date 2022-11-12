@@ -1,9 +1,27 @@
 /* ////////////////// Implement HTML /////////////////// */
 
+.figma1 a {
+  background-color: #1098ad;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  font-size: 2rem;
+  color: #fff;
+  border: 2px solid #000;
+  margin-right: 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.figma1 a:hover {
+  background-color: #e3fafc;
+  color: #000;
+}
 .section {
   height: 100%;
   padding: 1rem 9.6rem 9.6rem 9.6rem;
-  background-color: #fdf2e9;
+  background-color: #e3fafc;
 }
 
 .list-items {
@@ -30,9 +48,7 @@
 .list-store h3 {
   font-weight: 200;
   font-size: 4rem;
-  /* background-color: #e67e22; */
   color: #000;
-  /* padding: 0.9rem; */
   border-radius: 1rem;
 }
 
@@ -154,6 +170,7 @@
 }
 .section-design .heading-secondary {
   margin-bottom: 3rem;
+  font-size: 2.4rem;
 }
 .section-design .heading-secondary:last-child {
   margin-bottom: 10rem;
@@ -219,4 +236,45 @@
 .note {
   color: red;
   margin-bottom: 8rem !important;
+}
+
+.requirement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+.requirement-paper a,
+.figma {
+  position: absolute;
+  color: crimson !important;
+  padding: 1rem;
+  font-weight: 600;
+  top: -0.5rem;
+
+  right: 2rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  /* background-color: rgb(0 106 67); */
+}
+.requirement-paper,
+.requirement-figma {
+  position: relative;
+}
+
+.section-labs .container {
+  padding: 0 !important;
+}
+
+.requirement-paper a:hover,
+.figma:hover {
+  background-color: crimson;
+  color: #000 !important;
+}
+
+.requirement-figma .down {
+  position: absolute;
+  top: -0.5rem;
+  right: 20rem;
 }

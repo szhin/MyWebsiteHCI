@@ -1,9 +1,27 @@
 /* ////////////////// Implement HTML /////////////////// */
+.figma1 a {
+  background-color: #1098ad;
+  position: absolute;
+  right: 0;
 
+  text-transform: uppercase;
+  padding: 8px 20px;
+  font-size: 2rem;
+  color: #fff;
+
+  border: 2px solid #000;
+  margin-right: 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.figma1 a:hover {
+  background-color: #e3fafc;
+  color: #000;
+}
 .section {
   height: 100%;
   padding: 1rem 9.6rem 9.6rem 9.6rem;
-  background-color: #fdf2e9;
 }
 
 .list-items {
@@ -55,7 +73,7 @@
 
 .movement-name {
   background-color: rgb(14, 14, 83);
-  color: #fff;
+  color: #e3fafc;
   padding: 0.4rem 0.9rem;
   border-radius: 1rem;
   text-align: center;
@@ -127,7 +145,7 @@
   border: none;
   border-radius: 0.7rem;
   font-size: 1.8rem;
-  background-color: #fff;
+  background-color: #ffffff;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -137,7 +155,7 @@
 }
 
 .movements {
-  background-color: #fff;
+  background-color: #e3fafc;
 }
 
 #gsearch {
@@ -148,12 +166,12 @@
 /* ////////////////// Design HTML /////////////////// */
 .section-design {
   padding-top: 5rem;
-  /* height: 100vh; */
   background-color: inherit;
   color: #000;
 }
 .section-design .heading-secondary {
   margin-bottom: 3rem;
+  font-size: 2.4rem;
 }
 .section-design .heading-secondary:last-child {
   margin-bottom: 10rem;
@@ -172,8 +190,6 @@
   margin-bottom: 3rem;
   padding-right: 3rem;
   padding-left: 3rem;
-
-  /* border-bottom: 1px solid #000; */
 }
 
 .scroll img:last-child {
@@ -219,4 +235,46 @@
 .note {
   color: red;
   margin-bottom: 8rem !important;
+}
+
+/* /////////////////////// */
+.requirement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+.requirement-paper a,
+.figma {
+  position: absolute;
+  color: crimson !important;
+  padding: 1rem;
+  font-weight: 600;
+  top: -0.5rem;
+
+  right: 2rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  /* background-color: rgb(0 106 67); */
+}
+.requirement-paper,
+.requirement-figma {
+  position: relative;
+}
+
+.section-labs .container {
+  padding: 0 !important;
+}
+
+.requirement-paper a:hover,
+.figma:hover {
+  background-color: crimson;
+  color: #000 !important;
+}
+
+.requirement-figma .down {
+  position: absolute;
+  top: -0.5rem;
+  right: 20rem;
 }

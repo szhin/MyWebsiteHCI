@@ -5,70 +5,68 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap"
+    rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="img/favicon.png" />
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="icon" href="./img/logoShin1.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/style.css" />
-
-  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="./Resume/cssResume/style.css">
+  <link rel="stylesheet" href="./Resume/cssResume/general.css">
 
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <script defer src="js/script.js"></script>
-  <script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
-  <script defer src="/__/firebase/9.12.1/firebase-database-compat.js"></script>
-  <script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
-  <script defer src="/__/firebase/9.12.1/firebase-functions-compat.js"></script>
-  <script defer src="/__/firebase/9.12.1/firebase-messaging-compat.js"></script>
-  <script defer src="/__/firebase/9.12.1/firebase-storage-compat.js"></script>
-  <script defer src="/__/firebase/9.12.1/firebase-analytics-compat.js"></script>
-  <script defer src="/__/firebase/9.12.1/firebase-remote-config-compat.js"></script>
-  <script defer src="/__/firebase/9.12.1/firebase-performance-compat.js"></script>
-  <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
 
   <title>PhamCaoBang - 21130278</title>
+  <style>
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 3rem;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #1098ad;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 100px;
+      transition: all 0.3s;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+      height="18" fill="currentColor" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z" />
+    </svg></button>
   <header class="header">
-    <a href="#">
-      <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
-    </a>
-
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="./Lab1/lab1.html" style="font-family: Rubik, sans-serif;">Labs</a></li>
-        <li><a class="main-nav-link" href="#" style="font-family: Rubik, sans-serif;">Home</a></li>
-        <li><a class="main-nav-link" href="./About/about.html" style="font-family: Rubik, sans-serif;">About</a></li>
-        <li><a class="main-nav-link" href="https://www.figma.com/file/oL49SCOF5dPxcRan34FaRr/Untitled?node-id=0%3A1"
-            target="_blank" style="font-family: Rubik, sans-serif;">Figmaa</a></li>
-        <!-- <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li> -->
+    <h3 class="name" style="color: #182153;">Pham Cao Bang</h3>
+    <nav class="navbar">
+      <ul class="navbar-items">
+        <li><a href="#" class="main-nav-link" style="color: #AEB4D4;">Home</a></li>
+        <li><a href="./Lab1/lab1.html" class="main-nav-link">Labs</a></li>
+        <li><a href="./Resume/resume.html" class="main-nav-link">Resume</a></li>
+        <li><a href="./Resume/about.html" class="main-nav-link">About</a></li>
+        <li><a href="./Resume/result.html" class="main-nav-link">Result</a></li>
+        <li><a href="./Project/project.html" class="main-nav-link" target="_blank">Project</a></li>
       </ul>
     </nav>
-
-    <button class="btn-mobile-nav">
-      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-    </button>
   </header>
 
   <main>
@@ -448,47 +446,7 @@
         </div>
       </div>
 
-      <div class="container grid">
-        <aside class="plan-details">
-          Prices include all applicable taxes. You can cancel at any time.
-          Both plans include the following:
-        </aside>
-      </div>
 
-      <div class="container grid grid--4-cols">
-        <div class="feature">
-          <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
-          <p class="feature-title">Never cook again!</p>
-          <p class="feature-text">
-            Our subscriptions cover 365 days per year, even including major
-            holidays.
-          </p>
-        </div>
-        <div class="feature">
-          <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
-          <p class="feature-title">Local and organic</p>
-          <p class="feature-text">
-            Our cooks only use local, fresh, and organic products to prepare
-            your meals.
-          </p>
-        </div>
-        <div class="feature">
-          <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
-          <p class="feature-title">No waste</p>
-          <p class="feature-text">
-            All our partners only use reusable containers to package all your
-            meals.
-          </p>
-        </div>
-        <div class="feature">
-          <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
-          <p class="feature-title">Pause anytime</p>
-          <p class="feature-text">
-            Going on vacation? Just pause your subscription, and we refund
-            unused days.
-          </p>
-        </div>
-      </div>
     </section>
 
     <section class="section-cta">
@@ -540,9 +498,8 @@
   <footer class="footer">
     <div class="container grid grid--footer">
       <div class="logo-col">
-        <a href="#" class="footer-logo">
-          <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
-        </a>
+        <!-- logo -->
+        <h3 class="name" style="margin-bottom: 2rem;">Pham Cao Bang</h3>
         <ul class="social-links">
           <li>
             <a class="footer-link" href="#">
@@ -563,19 +520,19 @@
 
 
         <p class="copyright">
-          Copyright &copy; 2022 by PhamCaoBang, Inc. All rights reserved.
+          Copyright &copy; 2023 by PhamCaoBang, Inc. All rights reserved.
         </p>
       </div>
 
       <div class="address-col">
-        <p class="footer-heading">Contact us</p>
+        <p class="footer-heading">Contact</p>
         <address class="contacts">
           <p class="address">
-            623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            Quang Phu, Quang Dien, Thua Thien Hue Province, Viet Nam
           </p>
           <p>
             <a class="footer-link" href="tel:415-201-6370">415-201-6370</a><br />
-            <a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+            <a class="footer-link" href="mailto:imcaobang0612@gmail.com">imcaobang0612@gmail.com</a>
           </p>
         </address>
       </div>
@@ -610,6 +567,27 @@
       </nav>
     </div>
   </footer>
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 
 </html>
